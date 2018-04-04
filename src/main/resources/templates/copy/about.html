@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+ 
+ <head th:replace="common/header :: common-header"/>
+
+  <body>
+
+    <div th:replace="common/navbar :: common-navbar"/>
+    
+    <div class="container">
+    <div class="row">
+    <div class="col-md-12">
+    <div class="jumbotron">
+    <h1 class="text-center" th:text="#{copy.h1.text}"></h1>
+    <p class="lead" th:text="#{copy.p.lead}"></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    
+    <div class="container marketing">
+    <div class="row">
+    <div class="col-lg-4 span4">
+    <a href="#">
+    <img class="img-circle"
+    th:src="@{/images/browser-icon-firefox.png}"
+    width="140" height="140"
+    />
+    </a>
+    <h2><small class="member-title">Project Lead</small></h2>
+    <div class="span4 collapse-group">
+    <p class="collapse text-justify" th:text="#{copy.project.lead.intro}"></p>
+    <p><a class="btn btn-primary btn-collapse" href="#" role="button" th:text="#{copy.viewdetails.button}"></a></p>
+    </div>
+    </div>
+    <div class="col-lg-4 span4">
+    <a href="#">
+    <img class="img-circle"
+    th:src="@{/images/browser-icon-safari.png}"
+    width="140" height="140"
+    />
+    </a>
+    <h2><small class="member-title">Project Lead</small></h2>
+    <div class="span4 collapse-group">
+    <p class="collapse text-justify" th:text="#{copy.project.lead.intro}"></p>
+    <p><a class="btn btn-primary btn-collapse" href="#" th:text="#{copy.viewdetails.button}" role="button"></a></p>
+    </div>
+    </div>
+    <div class="col-lg-4 span4">
+    <a href="#">
+    <img class="img-circle"
+    th:src="@{/images/browser-icon-chrome.png}"
+    width="140" height="140"
+    />
+    </a>
+    <h2><small class="member-title">Project Lead</small></h2>
+    <div class="span4 collapse-group">
+    <p class="collapse text-justify" th:text="#{copy.project.lead.intro}"></p>
+    <p><a class="btn btn-primary btn-collapse" role="button" href="#" th:text="#{copy.viewdetails.button}"></a></p>
+    </div>
+    </div>
+    </div>
+    </div>
+<hr class="featurette-divider"/>
+<div class="featurette">
+<img class="featurette-image.pull-right" th:src="@{/images/browser-icon-chrome.png}"/>
+<h2 class="featurette-heading">First one<span class="muted">This is magic</span></h2>
+<p class="lead" th:text="#{copy.p.lead}"></p>
+</div>
+<hr class="featurette-divider"/>
+<div class="featurette">
+<img class="featurette-image.pull-left" th:src="@{/images/browser-icon-firefox.png}"/>
+<h2 class="featurette-heading">Second one<span class="muted">This is magic</span></h2>
+<p class="lead" th:text="#{copy.p.lead}"></p>
+</div>
+<hr class="featurette-divider"/>
+<div class="featurette">
+<img class="featurette-image.pull-right" th:src="@{/images/browser-icon-safari.png}"/>
+<h2 class="featurette-heading">Third one<span class="muted">This is magic</span></h2>
+<p class="lead" th:text="#{copy.p.lead}"></p>
+</div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <div th:replace="common/header :: before-body-scripts"/>
+    </body>
+</html>
