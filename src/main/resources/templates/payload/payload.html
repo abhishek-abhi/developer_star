@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+ 
+ <head th:replace="common/header :: common-header"/>
+
+  <body>
+
+    <div th:replace="common/navbar :: common-navbar"/>
+    
+    <div class="container" id="bright">
+    <div class="row">
+    <div class="col-md-12">
+    <div class="jumbotron">
+    <div class="text-center">
+    <h1 th:text="#{payload.h1.text}"></h1>
+    <p class="lead" th:text="#{payload.p.text}"></p>
+    </div>
+    </div>
+    </div>
+    </div>    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <div th:replace="common/header :: before-body-scripts"/>
+    </body>
+</html>
