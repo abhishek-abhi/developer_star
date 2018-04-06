@@ -37,7 +37,7 @@
     <logger name="org.hibernate" level="warn" />
     <logger name="org.hibernate.type.descriptor.sql.BasicBinder" level="warn" />
     <logger name="org.springframework.web" level="info" />
-    <logger name="org.springframework.security" level="warn" />
+    <logger name="org.springframework.security" level="debug" />
 
     <root level="warn">
         <appender-ref ref="CONSOLE" />
