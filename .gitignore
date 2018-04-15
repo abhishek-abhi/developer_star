@@ -6,6 +6,7 @@
 #
 *.html
 !spec/*.html
+src/main/resources/*
 
 # BlueJ files
 *.ctxt
