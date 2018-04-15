@@ -3,10 +3,6 @@
 
 # Log file
 *.log
-#
-*.html
-!spec/*.html
-src/main/resources/*
 
 # BlueJ files
 *.ctxt
